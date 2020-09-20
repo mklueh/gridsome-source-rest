@@ -1,6 +1,6 @@
 {
   "name": "gridsome-source-rest",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Improve user´s average time on page of your Gridsome site by generating post or product recommendations to show users related content they might be interested in.",
   "main": "gridsome.server.js",
   "author": "Marian Klühspies",
@@ -21,6 +21,7 @@
   "private": false,
   "keywords": [
     "gridsome",
+    "gridsome-plugin",
     "gridsome-source",
     "rest",
     "api",
