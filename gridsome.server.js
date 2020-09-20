@@ -72,7 +72,6 @@ class RestSourcePlugin {
     log(a) {
         if (this.options.debug) console.log(`${pluginName}: `, a);
     }
-
 }
 
 module.exports = RestSourcePlugin
