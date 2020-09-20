@@ -1,5 +1,5 @@
 {
-  "name": "gridsome-plugin-recommender-demo",
+  "name": "gridsome-source-rest-demo",
   "private": true,
   "scripts": {
     "build": "gridsome build",
