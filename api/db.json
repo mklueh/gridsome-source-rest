@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "metaField": "This text is loaded from the REST API into Metadata"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "How to use Gridsome with REST APIs?",
+      "link": "https://overflowed.dev",
+      "author": "Marian Klühspies"
+    },
+    {
+      "id": 2,
+      "title": "How to recommend users related posts?",
+      "link": "https://github.com/mklueh/gridsome-plugin-recommender",
+      "author": "Marian Klühspies"
+    }
+  ]
+}

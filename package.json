@@ -1,0 +1,39 @@
+{
+  "name": "gridsome-source-rest",
+  "version": "1.0.7",
+  "description": "Improve user´s average time on page of your Gridsome site by generating post or product recommendations to show users related content they might be interested in.",
+  "main": "gridsome.server.js",
+  "author": "Marian Klühspies",
+  "scripts": {
+    "json-server": "node api/server.js"
+  },
+  "contributors": [
+    "mklueh"
+  ],
+  "repository": {
+    "url": "https://github.com/mklueh/gridsome-source-rest"
+  },
+  "homepage": "https://www.overflowed.dev",
+  "bugs": {
+    "url": "https://github.com/mklueh/gridsome-source-rest"
+  },
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "gridsome",
+    "gridsome-source",
+    "rest",
+    "api",
+    "authentication"
+  ],
+  "peerDependencies": {
+    "gridsome": "^0.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.1",
+    "chalk": "^4.1.0"
+  }
+}
