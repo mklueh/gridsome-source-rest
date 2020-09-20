@@ -16,7 +16,6 @@ It is based on [axios](https://github.com/axios/axios) and allows setting axios 
 
 ## Getting Started
 
-Example: Find similar blog posts based on the title.
 
 ```js
 module.exports = {
@@ -24,16 +23,13 @@ module.exports = {
     {
       use: "gridsome-source-rest",
       options: {
-        enabled: true,
-        typeName: 'Post',
-        field: 'title',
-        relatedFieldName: 'related',
-        minScore: 0.01,
-        maxScore: 1,
-        minRelations:3,
-        maxRelations: 10,
-        fillWithRandom:false,
-        debug: false
+        debug: false,
+        axiosConfig: undefined,
+        endpoint: "http://your-api/posts",
+        typeName: "BlogPost",
+        isStatic: false,
+        isCollection: true,
+        responseInterceptor: undefined
       }
     }
   ]
@@ -51,11 +47,6 @@ In your **templates** use something like this
             id
             title
             author
-            related {
-              id
-              title
-              author
-            }
           }
         }
       }
@@ -63,13 +54,7 @@ In your **templates** use something like this
 </page-query>
 ```
 
-            isStatic: false,
-            isCollection: true,
-            /**
-             * Modify the response before it gets added to
-             * the collection
-             */
-            responseInterceptor: undefined
+       
 ## Options
 
 #### debug
@@ -113,3 +98,9 @@ Stores fetched data in a new collection created with **typeName**
 Stores fetched data in the global metadata object. In case your data model is an 
 **array**, it will be stored with **typeName** as property
 
+#### responseInterceptor
+
+- Type: `[function]`
+
+Interceptor function that receives the API response and let´s you modify it on the fly
+before data is getting added to the Gridsome collection
