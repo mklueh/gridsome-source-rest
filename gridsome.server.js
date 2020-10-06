@@ -55,8 +55,13 @@ class RestSourcePlugin {
     collectionData(data, actions) {
         const collection = actions.addCollection(this.options.typeName);
 
-        for (let item of data) {
-            collection.addNode(item);
+        try {
+            for (let item of data) {
+                collection.addNode(item);
+            }
+        } catch (e) {
+            console.error(e)
+            console.error("Have you set the right collection type [options.isStatic, options.isCollection]?")
         }
     }
 

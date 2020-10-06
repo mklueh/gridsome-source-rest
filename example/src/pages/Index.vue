@@ -5,11 +5,11 @@
     <p>
       This Example shows a simple implementation of the <a href="https://github.com/mklueh/gridsome-source-rest">gridsome-source-rest</a>
       plugin.
-      Posts below are fetched from the Demo REST API in the /api directory.
+      Posts below are fetched from GitHub Gist or a Demo REST API in the /api directory.
     </p>
 
     <i>
-      {{ $static.metadata.metaField }}
+      {{ $static.metadata.settings.metaField }}
     </i>
 
     <div>
@@ -33,7 +33,9 @@ export default {
 <static-query>
 query{
 metadata{
+settings{
 metaField
+}
 }
 }
 </static-query>

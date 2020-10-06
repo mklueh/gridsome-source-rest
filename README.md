@@ -2,11 +2,15 @@
 
 [![npm](https://img.shields.io/npm/v/gridsome-source-rest.svg)](https://www.npmjs.com/package/gridsome-source-rest)
 
-Let´s you fetch data from any REST API as a source for your [Gridsome](https://gridsome.org/) site.
-It is based on [axios](https://github.com/axios/axios) and allows setting axios configurations, which allows you to even use authenticated APIs.
+Pull data from any **REST API** as a source for your [Gridsome](https://gridsome.org/) site.
 
+The demo below is very simple and shows how to pull data from GitHub Gist or from a dummy REST server.
+It is however possible to pull data from literally anywhere with it, for example: **Twitter, eBay, Amazon, Facebook, Instagram** and so on.
 
-### [demo](https://mklueh.github.io/gridsome-source-rest/)
+### [Demo](https://mklueh.github.io/gridsome-source-rest/)
+
+If you need frequent data updates check if your REST provider supports webhooks that can
+trigger your site build or schedule your builds frequently.
 
 
 ## Install
@@ -104,3 +108,6 @@ Stores fetched data in the global metadata object. In case your data model is an
 
 Interceptor function that receives the API response and let´s you modify it on the fly
 before data is getting added to the Gridsome collection
+
+
+Based on [axios](https://github.com/axios/axios) and allows setting axios configurations, which allows you to even use authenticated APIs.

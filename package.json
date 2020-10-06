@@ -1,14 +1,17 @@
 {
   "name": "gridsome-source-rest",
-  "version": "1.0.10",
-  "description": "Gridsome data source allowing you to pull data from any REST API",
+  "version": "1.0.11",
+  "description": "Pull data from any REST API into your Gridsome site (ex. Facebook, Instagram, Twitter, Amazon etc)",
   "main": "gridsome.server.js",
   "author": "Marian Klühspies",
   "scripts": {
     "json-server": "node api/server.js"
   },
   "contributors": [
-    "mklueh"
+    {
+      "name": "Marian Klühspies",
+      "url": "https://github.com/mklueh"
+    }
   ],
   "repository": {
     "url": "https://github.com/mklueh/gridsome-source-rest"
